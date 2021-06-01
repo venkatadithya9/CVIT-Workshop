@@ -52,7 +52,7 @@ def create_mat(img1,columns,rows):
                 img2[i][j] = img1[i][j] + min(img2[i-1][j], img2[i+1][j], img2[i+1][j+1])
     return img2
 
-filename = 'tower.jpg'
+filename = 'images/tower.jpg'
 img = cv.imread(filename)
 img = cv.cvtColor(img,cv.COLOR_BGR2RGB)
 gray = cv.cvtColor(img,cv.COLOR_RGB2GRAY)
